@@ -1,0 +1,26 @@
+.tableHeader{
+    text-align: start;
+    background-color: #FF8C00	;
+
+}
+
+.tableHeader h1{
+    padding: 2rem;
+}
+
+.searchImg{
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5rem;
+    background-color: black;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.searchSection{
+    
+    display: flex;
+    align-items: center;
+ 
+    justify-content: end;
+}

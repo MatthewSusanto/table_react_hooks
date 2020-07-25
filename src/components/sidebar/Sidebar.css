@@ -1,0 +1,40 @@
+
+    #sidebar-wrapper{
+        min-height: 100vh !important;
+        width: 100vw;
+        position: relative;
+        left: 0;
+        padding: 0;
+        -webkit-transition: margin .25s ease-out;
+        -moz-transition: margin .25s ease-out;
+        -o-transition: margin .25s ease-out;
+        transition: margin .25s ease-out;
+        background-color: #474747;
+    }
+    #sidebar-wrapper .sidebar-heading {
+        padding: 0.875rem 1.25rem;
+        font-size: 1.2rem;
+    
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-link{
+        background-color: #474747;
+        padding: 2rem 0rem 2rem 0rem;
+        text-align: center;
+        color:white;
+        
+    }
+    .nav-link:hover{
+        color:white;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #1f1f1f
+    }
