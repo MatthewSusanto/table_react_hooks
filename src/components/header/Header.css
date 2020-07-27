@@ -1,26 +1,39 @@
+
+
 .tableHeader{
     text-align: start;
-    background-color: #FF8C00	;
-
+    background-color: #14213D;
+    border-bottom: 5px solid #FCA311;
 }
 
 .tableHeader h1{
     padding: 2rem;
-}
-
-.searchImg{
-    width: 40px;
-    height: 40px;
-    margin-left: 0.5rem;
-    background-color: black;
-    padding: 3px;
-    border-radius: 10px;
+    color: #FCA311;
 }
 
 .searchSection{
-    
+    margin: 2rem 0 2rem 0;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 10px;
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
- 
     justify-content: end;
 }
+
+
+.searchImg{
+    width: 35px;
+    height: 35px;
+    margin-left: 0.5rem;
+    padding: 3px;
+    background-color: rgb(128, 128, 128);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.searchImg:hover{
+background-color: black;
+cursor: pointer;
+}
+

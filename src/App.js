@@ -1,18 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Sidebar from './components/sidebar/Sidebar'
-import Table from './components/table/Table'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Dashboard from './components/dashboard/Dashboard'
+import { BrowserRouter, Route } from 'react-router-dom'
 function App() {
 
   return (
     <div>
 
       <BrowserRouter>
-
-        <Route exact path='/' component={Table} />
+        <Sidebar />
+        <Route exact path='/' component={Dashboard} />
 
       </BrowserRouter>
     </div>

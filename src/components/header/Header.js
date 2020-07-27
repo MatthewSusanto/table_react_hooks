@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
-import { Nav } from "react-bootstrap";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import { FormControl } from "react-bootstrap"
+
 import search from './images/search.png'
+
 import './Header.css';
 
 
-const Header = props => {
+const Header = ({ searchWordFromHeader }) => {
+
+    const [searchKeyword, setSearchKeyword] = useState()
+
+    // search input handler
+    const handleChange = (e) => {
+        setSearchKeyword(e.target.value)
+    }
+
+    // submit button handler
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        searchWordFromHeader(searchKeyword)
+
+    }
 
 
     return (
@@ -14,20 +29,23 @@ const Header = props => {
 
         <Container fluid className="tableHeader">
             <Row>
-                <Col xs={9} className="d-flex">
-                    <h1>This is a Table</h1>
+
+                {/* header title section */}
+                <Col xs={6} className="d-flex p-0">
+                    <h1 className="font-weight-bolder">This is a Table</h1>
                 </Col>
-                <Col xs={3} className="d-flex justify-content-end">
+
+                {/* search section of the header */}
+                <Col xs={6} className="d-flex justify-content-end">
                     <div className="searchSection">
-
-
-                        <Form inline>
-                            <FormControl type="text" placeholder="Enter 'pants'" />
+                        <Form inline onSubmit={handleSubmit}>
+                            <FormControl type="text" placeholder="Search..." onChange={handleChange} />
                         </Form>
-                        <img src={search} className="searchImg" alt="timelineImg" />
+                        <img src={search} className="searchImg" alt="timelineImg" onClick={handleSubmit} />
                     </div>
-
                 </Col>
+
+
             </Row>
 
         </Container>
