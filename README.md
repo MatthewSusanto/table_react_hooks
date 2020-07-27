@@ -10,7 +10,6 @@
 
 ### Features for later
 
-- Features for later:
 - Favourite and Save button
 - Sidebar
 - Advanced pagination
